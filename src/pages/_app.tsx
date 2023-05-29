@@ -2,11 +2,6 @@ import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import Head from "next/head";
 
-// const inter = Inter({ subsets: ["latin"] });
-// export const metadata = {
-//   title: "todo",
-// };
-
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <>

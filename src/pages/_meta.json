@@ -6,7 +6,12 @@
   "cv": {
     "title": "CV / Resume ↗",
     "type": "page",
-    "newWindow": true
+    "newWindow": false,
+    "theme":{
+      "toc": true,
+      "pagination": true
+      
+    }
   },
   "index":  {
     "title": "Home",
