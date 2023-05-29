@@ -1,16 +1,11 @@
 {
-  "projects": {
-    "title": "Projects",
-    "type": "page"
-  },
   "cv": {
     "title": "CV / Resume ↗",
     "type": "page",
     "newWindow": false,
     "theme":{
       "toc": true,
-      "pagination": true
-      
+      "pagination": false
     }
   },
   "index":  {

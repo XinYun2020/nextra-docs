@@ -1,6 +1,6 @@
 import { redirect, useRouter } from "next/navigation";
 import Link from "next/link";
-import { prisma } from "../../../db";
+import { prisma } from "../../../utils/db";
 
 const createTodo = async (event) => {
   event.preventDefault();
