@@ -1,18 +1,22 @@
-import { redirect } from "next/navigation";
+import { redirect, useRouter } from "next/navigation";
 import Link from "next/link";
 import { prisma } from "../../../db";
 
-async function createTodo(data: FormData) {
-  "use server";
+const createTodo = async (event) => {
+  event.preventDefault();
 
+  const data = new FormData(event.target);
   const title = data.get("title")?.valueOf();
+
   if (typeof title !== "string" || title.length === 0) {
     throw new Error("Invalid Title");
   }
 
   await prisma.todo.create({ data: { title, complete: false } });
-  redirect("/todo");
-}
+
+  const router = useRouter();
+  router.push("/todo");
+};
 
 export default function Page() {
   return (
@@ -20,7 +24,7 @@ export default function Page() {
       <header className="flex justify-between items-center mb-4">
         <h1 className="text-2xl">New</h1>
       </header>
-      <form action={createTodo} className="flex gap-2 flex-col">
+      <form onSubmit={createTodo} className="flex gap-2 flex-col">
         <input
           type="text"
           name="title"

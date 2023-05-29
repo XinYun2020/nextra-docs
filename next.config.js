@@ -13,4 +13,5 @@ const withNextra = require("nextra")({
   themeConfig: "./theme.config.tsx",
 });
 
-module.exports = withNextra(nextConfig);
+// module.exports = withNextra(nextConfig);
+module.exports = withNextra();

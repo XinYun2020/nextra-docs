@@ -3,13 +3,12 @@
 */
 import "../styles/globals.css";
 import React from "react";
-import { Metadata } from "next";
 import Head from "next/head";
 
-export const metadata: Metadata = {
-  title: "Home",
-  description: "Welcome to Next.js",
-};
+// export const metadata: Metadata = {
+//   title: "Home",
+//   description: "Welcome to Next.js",
+// };
 
 export default function RootLayout({
   children,
