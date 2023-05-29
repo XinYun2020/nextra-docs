@@ -1,6 +1,7 @@
 import CvLabelWithTime from "../components/CvLabelWithTime";
+import CvPDFDownloadButton from "../components/CvPDFDownloadButton";
 
-<div className="flex flex-col gap-4">
+<div className="flex flex-col gap-4 ">
 <h1 className="text-center text-3xl font-plex italic font-semibold">
   Xinyun Zhang
 </h1>
@@ -164,3 +165,7 @@ Proficient primary skills: React, TypeScript, JavaScript, UX/UI, Product, Teamwo
 **Additional Skills and Habits**: Build Keyboards, Adobe Photoshop, MS Office, Ceramic, Hiking
 
 **Language**: English (Bilingual Proficiency), Chinese Mandarin (Native, Bilingual Proficiency), Chinese Shanghainese
+
+<div className="flex flex-col fixed bottom-0 left-0 right-0 opacity-60 hover:opacity-100 active:scale-75 duration-200">
+  <CvPDFDownloadButton />
+</div>
