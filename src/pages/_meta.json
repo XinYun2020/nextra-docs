@@ -4,8 +4,11 @@
     "type": "page",
     "newWindow": false,
     "theme":{
+      "breadcrumb": false,
+      "footer": false,
       "toc": true,
-      "pagination": false
+      "pagination": false,
+      "typesetting": "article"
     }
   },
   "index":  {
