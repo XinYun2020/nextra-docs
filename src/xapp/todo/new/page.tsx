@@ -2,21 +2,21 @@ import { redirect, useRouter } from "next/navigation";
 import Link from "next/link";
 import { prisma } from "../../../utils/db";
 
-const createTodo = async (event) => {
-  event.preventDefault();
+// const createTodo = async (event) => {
+//   event.preventDefault();
 
-  const data = new FormData(event.target);
-  const title = data.get("title")?.valueOf();
+//   const data = new FormData(event.target);
+//   const title = data.get("title")?.valueOf();
 
-  if (typeof title !== "string" || title.length === 0) {
-    throw new Error("Invalid Title");
-  }
+//   if (typeof title !== "string" || title.length === 0) {
+//     throw new Error("Invalid Title");
+//   }
 
-  await prisma.todo.create({ data: { title, complete: false } });
+//   await prisma.todo.create({ data: { title, complete: false } });
 
-  const router = useRouter();
-  router.push("/todo");
-};
+//   const router = useRouter();
+//   router.push("/todo");
+// };
 
 export default function Page() {
   return (
@@ -24,7 +24,7 @@ export default function Page() {
       <header className="flex justify-between items-center mb-4">
         <h1 className="text-2xl">New</h1>
       </header>
-      <form onSubmit={createTodo} className="flex gap-2 flex-col">
+      {/* <form onSubmit={createTodo} className="flex gap-2 flex-col">
         <input
           type="text"
           name="title"
@@ -40,7 +40,7 @@ export default function Page() {
             Create
           </button>
         </div>
-      </form>
+      </form> */}
     </>
   );
 }
