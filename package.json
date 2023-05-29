@@ -6,7 +6,6 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start"
-
   },
   "repository": {
     "type": "git",
@@ -20,6 +19,7 @@
   "homepage": "https://github.com/shuding/nextra-docs-template#readme",
   "dependencies": {
     "@prisma/client": "4.14.1",
+    "google-fonts-plugin": "^5.0.2",
     "next": "13.0.6",
     "nextra": "latest",
     "nextra-theme-docs": "latest",
