@@ -45,4 +45,4 @@ yarn-error.log*
 *.tsbuildinfo
 
 dev.db*
-/src/*app/
+/src/xapp/
