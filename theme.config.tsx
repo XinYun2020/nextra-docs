@@ -31,9 +31,7 @@ const config: DocsThemeConfig = {
     labels: "feedback",
   },
   footer: {
-    text: `Copyright ${
-      /* @__PURE__ */ new Date().getFullYear()
-    } \xA9 Xinyun Zhang.`,
+    text: `\xA9 ${/* @__PURE__ */ new Date().getFullYear()} Xinyun Zhang.`,
   },
   sidebar: {
     defaultMenuCollapseLevel: 2,
