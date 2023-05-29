@@ -3,7 +3,7 @@ import { DocsThemeConfig } from "nextra-theme-docs";
 
 // node_modules/nextra-theme-docs/dist/index.tsx
 const config: DocsThemeConfig = {
-  logo: <span>XinYun2020 Zettelkasten</span>,
+  logo: <span>@XinYun2020 Zettelkasten</span>,
   project: {
     link: "https://github.com/XinYun2020",
   },
@@ -29,7 +29,7 @@ const config: DocsThemeConfig = {
   footer: {
     text: `Copyright ${
       /* @__PURE__ */ new Date().getFullYear()
-    } \xA9 XinYun2020.`,
+    } \xA9 Xinyun Zhang.`,
   },
   sidebar: {
     defaultMenuCollapseLevel: 1,
@@ -39,7 +39,7 @@ const config: DocsThemeConfig = {
     float: true,
     title: "Page Contents",
   },
-  useNextSeoProps: () => ({ titleTemplate: "%s \u2013 XinYun2020" }),
+  useNextSeoProps: () => ({ titleTemplate: "%s \u2013 Xinyun Zhang" }),
 };
 
 export default config;

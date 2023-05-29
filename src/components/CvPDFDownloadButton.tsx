@@ -3,6 +3,7 @@ import React from "react";
 const CvPDFDownloadButton: React.FC = () => {
   const handleDownload = () => {
     const downloadLink = document.createElement("a");
+    // downloadLink.href = "/Cv – Xinyun Zhang.pdf";
     downloadLink.href = "/Cv – Nextra.pdf";
     downloadLink.download = "Xinyun_Zhang_CV.pdf";
     downloadLink.click();
