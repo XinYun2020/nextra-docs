@@ -1,9 +1,13 @@
 {
   "index": "Introduction",
-  "zettelkasten-note":"⭐ Permanent Notes",
-  "zettelkasten-src":"🖋️ Fleeting Notes",
-  "about-me": {
-    "title": "About Me",
+  "zettelkasten-note":"⭐ Permanent Notes #blog",
+  "zettelkasten-src":"🖋️ Fleeting Notes #til",
+  "projects": {
+    "title": "Projects",
+    "type": "page"
+  },
+  "cv": {
+    "title": "CV / Resume",
     "type": "page"
   },
   "contact": {
