@@ -1,0 +1,28 @@
+{
+  "projects": {
+    "title": "Projects",
+    "type": "page"
+  },
+  "cv": {
+    "title": "CV / Resume ↗",
+    "type": "page",
+    "newWindow": true
+  },
+  "index":  {
+    "title": "Home",
+    "theme": {
+      "breadcrumb": false,
+      "footer": false,
+      "sidebar": true,
+      "toc": false,
+      "pagination": false,
+      "layout": "full",
+      "typesetting": "article"
+    }
+  },
+  "zettelkasten-note":"⭐ Permanent Notes #blog",
+  "---": {
+    "type": "separator"
+  },
+  "zettelkasten-src":"🖋️ Fleeting Notes #til"
+}
