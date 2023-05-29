@@ -11,7 +11,13 @@ const nextConfig = {
 const withNextra = require("nextra")({
   theme: "nextra-theme-docs",
   themeConfig: "./theme.config.tsx",
+  latex: true,
 });
 
 // module.exports = withNextra(nextConfig);
-module.exports = withNextra();
+module.exports = withNextra({
+  i18n: {
+    locales: ["en", "zh"],
+    defaultLocale: "en",
+  },
+});
