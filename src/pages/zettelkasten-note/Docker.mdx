@@ -1,6 +1,6 @@
 # Docker #infrastructure
 
-# P
+## P
 
 - [ ] [T3 in docker container](https://github.com/ajcwebdev/ct3a-docker)
 - In Brief
@@ -14,7 +14,7 @@
     - Docker Container can have multiple Volumes
     - 1 Volumne can be used by multiple Containers
 
-# A
+## A
 
 ## What?
 
@@ -50,7 +50,7 @@
         3. logout `docker logout [SERVER]` ⇒ `docker logout`
     - Image **Tags** (Image Versioning )
       - a label applied to a **Docker Image** in a **Repository**
-      ```bash
+      ```bash copy
       docker pull node:buster            ## node with tag buster
       docker pull node:8                 ## might be intel based image => but actually arm based
       ```
@@ -79,7 +79,7 @@
     - `docker images [OPTIONS] [REPOSITORY[:TAG]]` ⇒ list all images `docker image ls` or `docker images`
   - `docker ps` list running [containers](https://www.notion.so/Docker-Container-running-process-instanceOfImage-2161789c467940ba860178474d9e64a4) #container (container port, container id)
     - every container has a unique id ⇒ also linked to an image
-    ```bash
+    ```bash copy
     docker ps       # lists all containers (running)
     docker ps -a    # lists all containers (stoped and running)
      # -a or --all    lists all containers (stoped and running)
@@ -88,7 +88,7 @@
 - **Main process**
 
   - `docker pull` - pull **image** #image (can skip as `run` also `pull`)
-    ```bash
+    ```bash copy
     docker pull NAME[:TAG]
     docker pull nginx
     docker pull nginx:1.23
@@ -118,7 +118,7 @@
 
           - `docker run --name nginx -p 8080:80 -d nginx`
 
-          ```bash
+          ```bash copy
           docker run nginx                       ## docker run {name}:{tag} creates a container from image and starts it
           docker run --name web-app -d -p 9000:80 nginx:1.23    # expose container to local network localhost:9000
 
@@ -141,13 +141,13 @@
 
   - **Modify existing Docker CONTAINER**
     - `docker stop` 🛑 stop the **container**
-      ```bash
+      ```bash copy
       docker ps
       docker stop ea491e4t0fd7 # docker stop {CONTAINER_ID/NAME} stop one or more running containers
         # stop multiple with [space] in between the {CONTAINER_ID/NAME}
       ```
     - `docker start` 🟢 start the stopped **container** (running container ⇒ keep running)
-      ```bash
+      ```bash copy
       docker ps -a # show all stopped and running container
       docker start {CONTAINER_ID/NAME}
       ```
@@ -190,12 +190,12 @@
 - 🐞 debugging
 
   - `docker log`s - see app log in the container #debugging
-    ```bash
+    ```bash copy
     docker ps               # show the container id
     docker logs ea491e4t0fd7 # docker logs {CONTAINER_ID/NAME} view logs from service running inside the container (chich are present at the time of execution)
     ```
   - `docker exec -ti` ⚠️ not recommended, mainly for debug or testing purpose
-    ```bash
+    ```bash copy
     docker exec -ti w /usr/share/nginx/html/ nginx sh
     sed -i 's/nginx!/nginx inDocker!/g' index.html    ## replace text
     ```
@@ -213,7 +213,7 @@
            - the file stick around after all containers shut down
       2. Start a Container (Named Volume)
 
-         ```bash
+         ```bash copy
          ## start a container "nginx-volume" with a VOLUME attached
          docker run --name nginx-volume -p 8080:80 -v htdocs:/usr/share/nginx/html -d nginx
          ## NAMED VOLUME
@@ -231,7 +231,7 @@
 
       3. Start a Container (Bind Mount)
 
-         ```bash
+         ```bash copy
          ## start a container "nginx-bind" with BIND MOUNT attached
          docker run --name nginx-bind -p 8081:80 -v $(pwd)/htdocs:/usr/share/nginx/html -d nginx
          ## BIND MOUNT
@@ -248,7 +248,7 @@
 
       4. ./list-volume-mount.sh
 
-         ```bash
+         ```bash copy
 
          ./list-volume-mount.sh
          docker exec -ti nginx-volume sh -c "ls -ltr /usr/share/nginx/html"
@@ -269,7 +269,7 @@
 
 - docker network
 
-  ```bash
+  ```bash copy
   ## create docker network
   docker network create mongo-network
 
@@ -361,7 +361,7 @@
 
 ### How to clear all images, containers, and volumes in Docker?
 
-```bash
+```bash copy
 # remove containers, images, volumes
 docker rm -f $(docker ps -aq)
 docker rmi -f $(docker images -aq)
@@ -370,7 +370,7 @@ docker volume rm $(docker volume ls -q)
 
 ### How to Check the Architecture of Docker Image?
 
-```bash
+```bash copy
 docker pull node:buster            ## node with tag buster
 docker pull node:8                 ## might be intel based image => but actually arm based
 ls

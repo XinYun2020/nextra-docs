@@ -1,5 +1,7 @@
 // This is your Prisma schema file,
 // learn more about it in the docs: https://pris.ly/d/prisma-schema
+// create: npx prisma init --datasource-provider SQLite
+// migrate: npx prisma migrate dev --name init
 
 generator client {
   provider = "prisma-client-js"
@@ -8,4 +10,12 @@ generator client {
 datasource db {
   provider = "sqlite"
   url      = env("DATABASE_URL")
+}
+
+model Todo {
+  id        String   @id @default(uuid())
+  title     String
+  completed Boolean  @default(false)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 }
