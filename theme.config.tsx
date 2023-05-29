@@ -32,7 +32,7 @@ const config: DocsThemeConfig = {
     } \xA9 Xinyun Zhang.`,
   },
   sidebar: {
-    defaultMenuCollapseLevel: 1,
+    defaultMenuCollapseLevel: 2,
     toggleButton: false,
   },
   toc: {
