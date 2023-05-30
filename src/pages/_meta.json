@@ -24,8 +24,5 @@
     }
   },
   "zettelkasten-note":"⭐ Permanent Notes #blog",
-  "---": {
-    "type": "separator"
-  },
   "zettelkasten-src":"🖋️ Fleeting Notes #til"
 }

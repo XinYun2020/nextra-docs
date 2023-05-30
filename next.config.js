@@ -14,10 +14,11 @@ const withNextra = require("nextra")({
   latex: true,
 });
 
+module.exports = withNextra();
 // module.exports = withNextra(nextConfig);
-module.exports = withNextra({
-  i18n: {
-    locales: ["en", "zh"],
-    defaultLocale: "en",
-  },
-});
+// module.exports = withNextra({
+//   i18n: {
+//     locales: ["en", "zh"],
+//     defaultLocale: "en",
+//   },
+// });

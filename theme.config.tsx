@@ -53,14 +53,14 @@ const config: DocsThemeConfig = {
     title: "Page Contents",
   },
   useNextSeoProps: () => ({ titleTemplate: "%s \u2013 Xinyun Zhang" }),
-  // i18n: [
-  //   { locale: "en", text: "English" },
-  //   { locale: "zh", text: "中文" },
-  // ],
   navigation: {
     prev: true,
     next: true,
   },
+  // i18n: [
+  //   { locale: "en", text: "English" },
+  //   { locale: "zh", text: "中文" },
+  // ],
 };
 
 export default config;
