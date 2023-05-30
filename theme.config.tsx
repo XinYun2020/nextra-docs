@@ -39,7 +39,7 @@ const config: DocsThemeConfig = {
     titleComponent({ title, type }) {
       if (type === "separator") {
         return (
-          <div style={{ background: "cyan", textAlign: "center" }}>{title}</div>
+          <div style={{ background: "teal", textAlign: "center" }}>{title}</div>
         );
       }
       if (title === "About") {
