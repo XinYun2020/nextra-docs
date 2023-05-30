@@ -1,10 +1,19 @@
 import React from "react";
 
-const CvLabelWithTime = ({ label, time }) => {
+type CvLabelWithTimeProps = {
+  label: string | React.ReactNode;
+  time: string;
+  highlight?: boolean;
+};
+
+const CvLabelWithTime = ({ label, time, highlight = true }) => {
   return (
-    <div className="font-bold flex flex-col md:flex-row justify-between pt-2">
-      <span>{label}</span>
-      <span className="text-right">{time}</span>
+    <div
+      className={`grid grid-cols-1 md:grid-cols-5 font-bold justify-between pt-2 ${
+        highlight && " text-teal-600 dark:text-teal-400"
+      }`}>
+      <span className="text-lg md:col-span-4">{label}</span>
+      <span className="text-right md:col-span-1">{time}</span>
     </div>
   );
 };

@@ -1,5 +1,8 @@
 import CvLabelWithTime from "../components/CvLabelWithTime";
 import CvPDFDownloadButton from "../components/CvPDFDownloadButton";
+import CvStringToBadges from "../components/CvStringToBadges";
+import { Badge } from "../components/ui/badge.tsx";
+import { Steps } from "nextra-theme-docs";
 
 <div className="flex flex-col gap-4 ">
 <h1 className="text-center text-3xl font-plex italic font-semibold">
@@ -16,116 +19,133 @@ import CvPDFDownloadButton from "../components/CvPDFDownloadButton";
 
 ### Summary
 
-Results-driven and motivated Front-end Software Engineer with 2 years of experience in software development. Proficient in React, TypeScript, and JavaScript, with a strong focus on UX/UI and product development. Passionate about staying up-to-date with tech trends and dedicated to delivering high-quality software solutions, with strong leadership and communication skills, and enjoy keeping documentation organized. Successfully delivered multiple React and TypeScript projects with positive user feedback and capable of full-stack development. Have strong passion and interest in working more with DevOps and cloud technologies as next stage for my career.
+<div className="text-justify">
+  Front-end Software Developer in Melbourne. I love developing high-quality
+  software solutions with great accessibility and UX/UI design. I enjoy working
+  in teams and communicating with people from different fields. I am passionate
+  about tech trends and enjoy documenting and organizing the knowledge acquired
+  in daily life. I have successfully delivered multiple React and TypeScript
+  projects with positive user feedback and am capable of full-stack development.
+  I have a strong passion and interest in working more with DevOps and cloud
+  technologies as the next stage of my career.
+</div>
 
 ### Technical Skills
 
+<ul>
+
 - 👩🏻‍💻 **Core Programming Language:** TypeScript, JavaScript, Python, SQL
-- 🧰 **Frameworks:** Next.js, React.js, AngularJS, Node.js, Express.js, Spring Boot, Flask
-- 🗄️ **Databases:** Postgres, MySQL, CouchDB, MongoDB
+- 🧰 **Frameworks:** Next.js, React.js, AngularJS, Node.js, Express.js, Spring Boot, Flask, Django
+- 🗄️ **Databases:** PostgreSQL, MySQL, CouchDB, MongoDB
 - 💻 **Operating Systems:** macOS, Windows, Linux, Ubuntu
-- 🛠️ **Other Tools:** Git, Bitbucket, Docker, Figma, Postman, Bootstrap, HTML, CSS, R, C, Java, Matlab, Swift, etc...
+- 🛠️ **Others:** Git, Bitbucket, Docker, Figma, Postman, Bootstrap, HTML/CSS/SASS/LESS, R, C, Java, Matlab, Swift, ReSTful APIs, Unit Testing, Agile, etc...
 
-### Work Experience
+</ul>
 
-<CvLabelWithTime
-  label={"Frontend Developer, IPIC Pty Ltd, George & Matilda"}
-  time={"Aug 2022 - Current"}
-/>
+### Professional Experience
 
-- Responsible for development and maintenance of stock management and finance monitor application using modern technologies like TypeScript, React.js, and further troubleshoot and optimize the system.
-- Projects receiving 100% positive user feedback, and result in more beneficial user after the project accomplishment, features benefitting 80+ clinics.
-- Implemented feature achieving faster access to multi-source finance data, result in achieved reducing financial report errors which where previous unforeseenable.
-- Built design system and layout component to achieve more customized and efficient development process.
-- Implemented caching mechanisums and restrucutre code to reduce API calls, improved overall system performance.
-- Engaged with customer and faciliated project from planning to successful delivery.
-- **Projects (details in Projects section below):** React Migration Project, Appointment Booking System
+<Steps>
 
 <CvLabelWithTime
-  label={"Junior Frontend Developer, IPIC Pty Ltd, George & Matilda"}
-  time={"Sep 2021 - Aug 2022"}
+  label={"Frontend Engineer, IPIC Pty Ltd, George & Matilda"}
+  time={"Sep 2021 - Current"}
 />
 
-- Maintained and implement new finance related features for Angular React applications in TypeScript.
-- New feature helps detect potential data issues, reduce 80% unresolved issues, and shorten issue date from 8 month to 3 weeks.
-- Supported the Tech Lead in developing software solutions in line with the company's vision, and continuously improved technical skills in DevOps, React, Typescript/Javascript, CI/CD, code reviews, and testing.
-- **Projects (details in Projects section below):** React Migration Project, Finance Report Application
+<div>
+Front-end Engineer responsible for developing and troubleshooting the system. Developing software solutions aligned with the company's vision, conducting code reviews, and performing testing. The major projects include:
+<ul >
+
+- **Finance Report Application:** Maintained and implemented new features to AngularJS application, including UI design, API design, and frontend development and optimize system speed. Implemented new data investigation and monitoring tool enabled faster access to finance data, achieved reducing financial report errors.
+- **Appointment Booking System:** Developed clinical appointments management system React application.
+- **React Migration Project:** Built AngularJS and React hybrid system management web application.
+
+</ul>
+</div>
+
+<label className="block font-bold pt-2">Achievements:</label>
+<ul>
+
+- Implementing new finance data investigation and monitoring tool feature helps detect potential data issues. Reduced 80% unresolved issues, and shortened issue date from 8 month to 3 weeks.
+- Engaged with customer and faciliated project from planning to successful delivery. And receiving 100% positive user feedback, and result in more beneficial user after the project accomplishment, features enabled 80+ clinics.
+- Built react design system to achieve more customized and efficient development process.
+- Component architecture designs, developing microservices and project denpencies management
+- Implemented caching mechanisums and restrucutre code to reduce API calls, improved overall system performance, optimized ui rendering and enhanced UX.
+
+</ul>
+
+<label className="block font-bold">Technical Skills:</label>
+<ul>
+
+<CvStringToBadges items="TypeScript, JaveScript, React, Next.js, AngularJS, HTML/CSS/SASS/TailwindCSS, Bootstrap, Prisma, tRPC, Vitest, Jest, Storybook, Webpack, Docker, Monorepo, Bitbucket, Postman, Figma, Agile Scrum, Design System, Design Patterns, Component Architecture, Custom Hooks, API Design, UI/UX Design" />
+
+</ul>
 
 <CvLabelWithTime
   label={"Engineer Intern, Rose Plastic"}
   time={"Sep 2018 – Sep 2019"}
 />
+<ul>
 
-- Conduct market data analysis and gather requirements to inform project direction.
-- Support Tech Lead in developing solutions aligned with company vision and maintaining data systems.
-- Manage client communication to ensure project success.
+- Conduct market data analysis and gather requirements to inform project direction. Manage client communication to ensure project success.
+- Support Tech Lead in developing solutions aligned with company vision and maintaining data systems. Planned, tested, and maintained web applications.
+
+</ul>
+
+</Steps>
 
 ### Projects
 
-<CvLabelWithTime
-  label={"George & Matilda - Appointment Booking System"}
-  time={"2023"}
-/>
+<Steps>
+<CvLabelWithTime label={"Personal - Legal Policy Project"} time={"2023"} />
 
-- **Role:** Frontend Engineer
-- **Responsibilities:** Designed and prototyped clinical appointments management system project.
-- **Technical Skills:** TypeScript, React, Tailwind CSS, Figma, UX Design, Next.js, Prisma, tRPC, Headless Components, Bitbucket.
+<ul>
 
-<CvLabelWithTime
-  label={"George & Matilda - React Migration Project"}
-  time={"2022-2023"}
-/>
+- **Full Stack Developer** responsible for developing AI policy structure generatator web application based on existing policy documents for legal use in Python with GPT.
 
-- **Role:** Frontend Engineer
-- **Responsibilities:**
-  - Built hybrid stock and finance system management web application with Angular and React
-  - Component design system building, component architecture designs, developing microservices, and project denpencies management
-  - Optimized UI rendering and enhanced UX
-- **Technical Skills:** TypeScript, Next.js, React, Tailwind CSS, Monorepo, Storybook, Vitest, Jest, Headless Components, Webpack, Tanstack Library, Design Patterns, Component Architecture, Design System, Custom Hooks, Bitbucket, Docker, Agile Scrum.
+<CvStringToBadges items="Python, NLP, OpenAI, Streamlit, Docker, Render, Git" />
 
-<CvLabelWithTime
-  label={"George & Matilda - Finance Report Application"}
-  time={"2021-2022"}
-/>
-
-- **Role:** Frontend Engineer, Project Manager
-- **Responsibilities:**
-  - Maintained and implement new features to AngularJS application, including UI design, API design, and frontend development and optimize system speed.
-  - The new data investigation and monitoring tool enabled faster access to finance data, achieved reducing financial report errors.
-- **Technical Skills:** TypeScript, AngularJS, Docker, Postman, Jest, Webpack, Bootstrap, CSS, HTML, API Design, Component Architecture, UI-Router, Sass, Bitbucket, Agile Scrum.
+</ul>
 
 <CvLabelWithTime
   label={"Melbourne University - Cluster Cloud Computing Data Analytic Project"}
   time={"2023"}
 />
 
-- **Role:** Full Stack Developer, Project Manager
-- **Responsibilities:** Design and developed responsive data visualization web application to visualize and analyze data from multisourced social media platforms using charts, graphs, and map.
-- **Technical Skills:** TypeScript, React, Next.js, Flask, Python, Tailwind CSS, GitHub, Ansible, CouchDB, Docker, NLP Senmentic Anaylsis, MUI, Agile.
+<ul>
+
+- **Full Stack Developer, Project Manager** responsible for desiging and developing responsive data visualization web application to analyze data from multisourced social media platforms.
+
+<CvStringToBadges items="TypeScript, React, Next.js, Flask, Python, Tailwind CSS, GitHub, Ansible, CouchDB, Docker, NLP, MUI, Agile" />
+
+</ul>
 
 <CvLabelWithTime
   label={"Personal - Keyboard Commercial Website"}
   time={"2022"}
 />
 
-- **Role:** Full Stack Developer
-- **Responsibilities:** Developed a commercial web application that can process payment transactions for trading keyboards, with the love of keyboard.
-- **Technical Skills:** JavaScript, React.js, Next.js, Tailwind CSS, TanStack Query, Sanity CMS, Stripe, Vercel, GitHub.
+<ul>
 
-<CvLabelWithTime label={"Personal - Legal Policy Project"} time={"2023"} />
+- **Full Stack Developer** responsible for developing a commercial web application that can process payment transactions for trading keyboards, with the love of keyboard.
 
-- **Role:** Full Stack Developer
-- **Responsibilities:** Developed AI policy structure generatator web application based on existing policy documents for legal use in Python with GPT.
-- **Technical Skills:** Python, NLP, OpenAI, Streamlit, Docker.
+<CvStringToBadges items="JavaScript, React.js, Next.js, Tailwind CSS, TanStack Query, Sanity CMS, Stripe, Vercel, GitHub" />
+
+</ul>
 
 <CvLabelWithTime
-  label={"Monash University - BARD AI (Automatically create and deploy APIs)"}
+  label={
+    "Monash University - BARD AI Automatic APIs Creation & Deployment Project"
+  }
   time={"2021"}
 />
 
-- **Role:** Frontend Developer
-- **Responsibilities:** Develop specialized technical skill development in DevOps, React, Django and Flask, Python, PostgreSQL, CI/CD, and implement authentication.
-- **Technical Skills:** JavaScript, Python, React, Django, Flask, API Design, Project Management, Git, Jenkins, GitHub Actions, Git CLI, JWT.
+<ul>
+
+- **Frontend Developer** responsible for developing a web application to automatically create and deploy APIs based on user input on the dashboard.
+
+<CvStringToBadges items="Python, Django, Flask, JavaScript, React, PostgreSQL, API Design, Project Management, Agile, Git, DevOps, Jenkins, GitHub Actions, JWT authentication" />
+
+</ul>
 
 <CvLabelWithTime
   label={
@@ -134,16 +154,32 @@ Results-driven and motivated Front-end Software Engineer with 2 years of experie
   time={"2021"}
 />
 
-- **Role:** Full Stack Developer, UI/UX Designer
-- **Responsibilities:** Designed and developed an interactive iOS mobile contact lens and prescription management application. Implement real-time geolocation and notifications using the Google Places API.
-- **Technical Skills:** Swift, Firebase, Core Data backend database, Google Place API, Figma, GitHub, Gesture.
+<ul>
+
+- **Full Stack Developer, UI/UX Designer** responsible for designing and developing interactive iOS mobile contact-lens management mobile iOS application. Implement real-time geolocation and notifications.
+
+<CvStringToBadges items="Swift, Firebase, Core Data backend database, Google Place API, Figma, GitHub, Gesture" />
+
+</ul>
+
+</Steps>
 
 ### Education
 
+<Steps>
+
 <CvLabelWithTime
-  label={"Master of Data Science, The University of Melbourne"}
-  time={"(Part time) Mar 2022 - Expected Dec 2025"}
+  label={
+    <div className="flex gap-2">
+      <span>Master of Data Science, The University of Melbourne</span>
+      <span className="text-justify leading-tight text-sm my-auto">
+        (part-time 16hr/wk)
+      </span>
+    </div>
+  }
+  time={"Mar 2022 - Expected Dec 2025"}
 />
+
 <CvLabelWithTime
   label={
     "Bachelor of Software Engineering (Honours), Monash University University"
@@ -151,30 +187,48 @@ Results-driven and motivated Front-end Software Engineer with 2 years of experie
   time={"Mar 2018 - Oct 2021"}
 />
 
-- [“A Curated Personas and Design Guidelines Tool for Better Supporting Diverse End-users.” published in 2022 IEEE 46th Annual Computers, Software, and Applications Conference (COMPSAC)](https://ieeexplore.ieee.org/abstract/document/9842733) Academic research in Human-Computer Interaction (HCI) and User Experience (UX) Design for designing non-biased, highly accessible software applications.
+<div className="text-justify leading-tight text-sm">
+  Academic research for designing non-biased, highly accessible software
+  applications. [Published in 2022 IEEE 46th Annual Computers, Software, and
+  Applications Conference (COMPSAC)“A Curated Personas and Design Guidelines
+  Tool for Better Supporting Diverse End-users.”
+  ](https://ieeexplore.ieee.org/abstract/document/9842733)
+</div>
+
+</Steps>
 
 ### Extra-Curricular Activities
 
-<CvLabelWithTime
-  label={"Global Game Jam, Challenge Accomplishment Certificate"}
-  time={"March 2023"}
-/>
+<Steps>
+<CvLabelWithTime label={"2023 Global Game Jam"} time={"March 2023"} />
+<div className="text-justify">
+  **Achieved Challenge Accomplishment Certificate.** 2023 GGJ is a 3-day game
+  development hackathon.
+</div>
 
-- 2023 GGJ is a 3-day hackathon where game developers and designers build a playable digital game within 48 hours, to showcase creativity, project management, teamwork, and development skills.
-
 <CvLabelWithTime
-  label={
-    "NexStar Melbourne-Nanjing Sprint Pitch Competition, Second Prize Award & Startup’s Choice Award Certificate"
-  }
+  label={"NexStar Melbourne-Nanjing Sprint Pitch Competition, "}
   time={"April 2022"}
 />
+<div className="text-justify">
+  **Achieved Second Prize Award & Startup’s Choice Award Certificate.**
+  Performed comprehensive business and market analysis and develop a
+  go-to-market pitch for startup companies.
+</div>
 
-- Perform comprehensive business and market analysis and develop a go-to-market pitch for startup companies.
+</Steps>
 
 ### Additional Information
 
-**Additional Skills**: Keyboards Building and keymap coding, GitHub open source project studing, Technical video and blog reading and summarizing
-
-**Language**: English (Bilingual Proficiency), Chinese Mandarin (Native, Bilingual Proficiency), Chinese Shanghainese
+<>
+  <div className="text-md">
+    **Additional Skills:** Keyboards Building and keymap coding, GitHub open
+    source project studing, Technical video and blog reading and summarizing
+  </div>
+  <div className="text-md">
+    **Language:** English (Bilingual Proficiency), Chinese Mandarin (Native,
+    Bilingual Proficiency), Chinese Shanghainese
+  </div>
+</>
 
 <CvPDFDownloadButton />
