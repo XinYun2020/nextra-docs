@@ -28,7 +28,7 @@ const CvPDFDownloadButton: React.FC = () => {
   return (
     <>
       {isClicked && <Confetti gravity={0.2} numberOfPieces={pieces} />}
-      <div className="flex flex-col fixed bottom-0 left-0 right-0 opacity-60 hover:opacity-100 active:scale-75 duration-200">
+      <div className="cv-pdf-download-button flex flex-col fixed bottom-0 left-0 right-0 opacity-60 hover:opacity-100 active:scale-75 duration-200">
         <button onClick={handleDownload} className="btn">
           Download CV
         </button>

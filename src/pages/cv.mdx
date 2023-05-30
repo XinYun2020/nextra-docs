@@ -4,17 +4,20 @@ import CvStringToBadges from "../components/CvStringToBadges";
 import { Badge } from "../components/ui/badge.tsx";
 import { Steps } from "nextra-theme-docs";
 
-<div className="flex flex-col gap-4 ">
+<div className="flex flex-col md:flex-row gap-4 justify-between">
 <h1 className="text-center text-3xl font-plex italic font-semibold">
   Alice Zhang
 </h1>
 
-  <div className="flex flex-col md:flex-row md:justify-between">
-    <span>📫 Email: xinyunzhang2016@gmail.com</span>
-    <span>📞 Ph: 0479 189 008</span>
-    <span>[GitHub](https://github.com/XinYun2020)</span>
-    <span>[LinkedIn](https://www.linkedin.com/in/xinyun2020/)</span>
-  </div>
+<div className="flex flex-col justify-evenly">
+  <span>📫 Email: xinyunzhang2016@gmail.com</span>
+  <span>📞 Ph: 0479 189 008</span>
+</div>
+<div className="flex flex-row md:flex-col justify-evenly">
+  <span>[GitHub](https://github.com/XinYun2020)</span>
+  <span>[LinkedIn](https://www.linkedin.com/in/xinyun2020/)</span>
+</div>
+
 </div>
 
 ### Summary
@@ -229,4 +232,4 @@ Front-end Engineer responsible for developing and troubleshooting the system. De
   </div>
 </>
 
-{/* <CvPDFDownloadButton /> */}
+<CvPDFDownloadButton />
