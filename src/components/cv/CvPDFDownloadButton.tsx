@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Confetti from "react-confetti";
+import { BsDownload } from "react-icons/bs";
 
 const CvPDFDownloadButton: React.FC = () => {
   const [isClicked, setIsClicked] = useState<boolean>(false);
@@ -27,10 +28,14 @@ const CvPDFDownloadButton: React.FC = () => {
 
   return (
     <>
-      {isClicked && <Confetti gravity={0.2} numberOfPieces={pieces} />}
-      <div className="cv-pdf-download-button flex flex-col fixed bottom-0 left-0 right-0 opacity-60 hover:opacity-100 active:scale-75 duration-200">
-        <button onClick={handleDownload} className="btn">
-          Download CV
+      {isClicked && (
+        <div className="overflow-hidden flex justify-center max-w-screen">
+          <Confetti gravity={0.2} numberOfPieces={pieces} />
+        </div>
+      )}
+      <div className="cv-pdf-download-button fixed bottom-5 left-auto right-5 opacity-80 hover:opacity-100 active:scale-75 duration-200 ">
+        <button onClick={handleDownload} className="btn focus:ring-0">
+          <BsDownload />
         </button>
       </div>
     </>
