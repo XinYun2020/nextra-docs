@@ -1,3 +1,14 @@
+export const MY = {
+  email: "xinyunzhang2016@gmail.com",
+  nextra: "https://xinyun-zettelkasten.vercel.app/",
+  github: "https://github.com/XinYun2020",
+  github_sponsor: "https://github.com/sponsors/XinYun2020",
+  linkedin: "https://www.linkedin.com/in/xinyun2020/",
+  youtube: "https://www.youtube.com/channel/UCa8jbsnXGaAHAP997EVsvAg",
+  medium: "https://medium.com/@xinyun2020",
+  twitter: "https://twitter.com/xinyun2020",
+};
+
 type TSectionData = {
   type: "work" | "project" | "edu" | "extra";
   what: string;

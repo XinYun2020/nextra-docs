@@ -1,4 +1,10 @@
 {
+  "sponsor": {
+    "title": "Sponsor",
+    "type": "page",
+    "newWindow": false
+
+  },
   "cv": {
     "title": "CV / Resume ↗",
     "type": "page",
