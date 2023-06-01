@@ -11,7 +11,7 @@ const CvStringToBadges = ({ items }: { items: string }) => {
   return (
     <span className="flex gap-1.5 py-1 flex-wrap">
       {itemsArray.map((item) => {
-        return <Badge>{item}</Badge>;
+        return <Badge>{item.trim()}</Badge>;
       })}
     </span>
   );
