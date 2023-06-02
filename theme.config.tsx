@@ -1,35 +1,13 @@
 import React from "react";
 import { DocsThemeConfig } from "nextra-theme-docs";
+import Logo from "./src/components/Icons/Logo";
 import TwitterIcon from "./src/components/Icons/TwitterIcon";
 import ThemeToggle from "./src/components/ThemeToggle/ThemeToggle";
 import { MY } from "./src/constants";
 
 // node_modules/nextra-theme-docs/dist/index.tsx
 const config: DocsThemeConfig = {
-  logo: (
-    <>
-      <svg
-        width="36"
-        height="36"
-        viewBox="0 0 36 36"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg">
-        <rect
-          stroke="#4deac3"
-          stroke-width="2"
-          id="svg_6"
-          height="29.38462"
-          width="25.07692"
-          y="3.30769"
-          x="5.46154"
-          rx={5}
-        />
-      </svg>
-      <span style={{ marginLeft: ".4em", fontWeight: 800 }}>
-        XinYun2020 Zettelkasten
-      </span>
-    </>
-  ),
+  logo: <Logo />,
   project: {
     link: "https://github.com/XinYun2020",
   },

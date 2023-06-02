@@ -2,6 +2,7 @@ import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import Head from "next/head";
 import { Provider } from "react-wrap-balancer";
+import { FiraCode, PlexMono } from "../components/Wrapper/FontWrapper";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -14,7 +15,9 @@ export default function App({ Component, pageProps }: AppProps) {
         />
       </Head> */}
       <Provider>
+        {/* <FiraCode> */}
         <Component {...pageProps} />
+        {/* </FiraCode> */}
       </Provider>
     </>
   );

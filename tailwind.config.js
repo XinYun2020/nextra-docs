@@ -8,11 +8,16 @@ module.exports = {
 
     // Or if using `src` directory:
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
+    "theme.config.js",
   ],
   theme: {
     extend: {
       fontFamily: {
         plex: ["IBM Plex Mono", "monospace"],
+        fira: ["Fira Code", "monospace"],
+      },
+      fontStyle: {
+        plex: ["italic"],
       },
     },
   },
