@@ -45,7 +45,7 @@ const config: DocsThemeConfig = {
     text: `\xA9 ${/* @__PURE__ */ new Date().getFullYear()} Xinyun Zhang.`,
   },
   sidebar: {
-    defaultMenuCollapseLevel: 2,
+    // defaultMenuCollapseLevel: 2,
     toggleButton: false,
     titleComponent({ title, type }) {
       if (type === "separator") {
