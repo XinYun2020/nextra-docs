@@ -1,12 +1,6 @@
 import React from "react";
 import { DocsThemeConfig } from "nextra-theme-docs";
-import {
-  Logo,
-  TwitterIcon,
-  BilibiliIcon,
-  YoutubeIcon,
-  InstagramIcon,
-} from "./src/components/Icons";
+import { Logo, NavbarIcons } from "./src/components/Icons";
 import ThemeToggle from "./src/components/ThemeToggle/ThemeToggle";
 import { MY } from "./src/constants";
 
@@ -78,12 +72,7 @@ const config: DocsThemeConfig = {
   navbar: {
     extraContent: (
       <>
-        <TwitterIcon />
-        <YoutubeIcon />
-        <BilibiliIcon />
-        {/* <RedbookIcon /> */}
-        <InstagramIcon />
-        <ThemeToggle />
+        <NavbarIcons />
       </>
     ),
   },

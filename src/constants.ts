@@ -7,7 +7,7 @@ export const MY = {
   youtube: "https://www.youtube.com/channel/UCa8jbsnXGaAHAP997EVsvAg",
   medium: "https://medium.com/@xinyun2020",
   twitter: "https://twitter.com/xinyun2020",
-  instagram: "",
+  instagram: "https://www.instagram.com/zhangxinyun23/",
   bilibili: "",
 };
 
