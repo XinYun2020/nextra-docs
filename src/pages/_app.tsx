@@ -3,22 +3,23 @@ import type { AppProps } from "next/app";
 import Head from "next/head";
 import { Provider } from "react-wrap-balancer";
 import { FiraCode, PlexMono } from "../components/Wrapper/FontWrapper";
+import {
+  ClerkProvider,
+  SignedIn,
+  SignedOut,
+  RedirectToSignIn,
+  SignInButton,
+} from "@clerk/nextjs";
+import { useRouter } from "next/router";
 
 export default function App({ Component, pageProps }: AppProps) {
+  // Get the pathname
+
   return (
     <>
-      {/* <Head>
-        <title>test</title>
-        <link
-          href="https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.css"
-          rel="stylesheet"
-        />
-      </Head> */}
-      <Provider>
-        {/* <FiraCode> */}
+      <ClerkProvider {...pageProps}>
         <Component {...pageProps} />
-        {/* </FiraCode> */}
-      </Provider>
+      </ClerkProvider>
     </>
   );
 }

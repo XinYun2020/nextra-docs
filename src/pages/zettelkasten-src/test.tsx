@@ -7,9 +7,9 @@ import VisitCounter from "../../components/Wrapper/VisitCounter";
 const test = () => {
   return (
     <>
-      {/* <ParallaxComponent /> */}
+      <ParallaxComponent />
       {/* <VisitCounter /> */}
-      <AppleAirPod />
+      {/* <AppleAirPod /> */}
       {/* <ZoomComponent /> */}
     </>
   );
