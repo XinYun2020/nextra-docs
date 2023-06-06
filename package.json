@@ -19,6 +19,7 @@
   "homepage": "https://github.com/shuding/nextra-docs-template#readme",
   "dependencies": {
     "@prisma/client": "4.14.1",
+    "@react-spring/parallax": "^9.7.2",
     "class-variance-authority": "^0.6.0",
     "google-fonts-plugin": "^5.0.2",
     "html2pdf.js": "^0.10.1",
