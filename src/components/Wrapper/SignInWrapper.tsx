@@ -12,7 +12,7 @@ const SignInWrapper = ({ children }: PropsWithChildren) => {
       <SignedOut>
         <div className="w-full">
           <SignInButton mode="modal" redirectUrl={"/cv"}>
-            <button className="btn mx-auto my-auto">Sign in</button>
+            <button className="btn mx-auto  my-20">Sign in</button>
           </SignInButton>
         </div>
       </SignedOut>
