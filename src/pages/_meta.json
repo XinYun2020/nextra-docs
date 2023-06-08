@@ -4,8 +4,13 @@
     "type": "page",
     "newWindow": false
   },
+  "about": {
+    "title": "About",
+    "type": "page",
+    "newWindow": false
+  },
   "cv": {
-    "title": "CV / Resume ↗",
+    "title": "Resume ↗",
     "type": "page",
     "newWindow": false,
     "theme":{
@@ -14,7 +19,6 @@
       "toc": true,
       "pagination": false,
       "typesetting": "article"
-      
     }
   },
   "index":  {
