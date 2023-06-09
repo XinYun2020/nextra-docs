@@ -1,15 +1,14 @@
 import React from "react";
 import { DocsThemeConfig } from "nextra-theme-docs";
-import { Logo, NavbarIcons } from "./src/components/Icons";
-import ThemeToggle from "./src/components/ThemeToggle/ThemeToggle";
-import { MY } from "./src/constants";
+import { Logo, NavbarIcons } from "./components/Icons";
+import ThemeToggle from "./components/ThemeToggle/ThemeToggle";
+import { MY } from "./constants";
+import { useRouter } from "next/router";
+import { useConfig } from "nextra-theme-docs";
+import { Pre } from "./components/Pre";
 
 // node_modules/nextra-theme-docs/dist/index.tsx
 const config: DocsThemeConfig = {
-  logo: <Logo />,
-  project: {
-    link: "https://github.com/XinYun2020",
-  },
   banner: {
     key: "2023-CV-released",
     text: (
@@ -18,25 +17,32 @@ const config: DocsThemeConfig = {
       </a>
     ),
   },
+  // head: <Head />,
+  logo: <Logo />,
+  darkMode: false,
+  primaryHue: 172.5,
+  themeSwitch: {},
+  nextThemes: {
+    defaultTheme: "system",
+  },
+  project: {
+    link: "https://github.com/XinYun2020",
+  },
   direction: "ltr",
   faviconGlyph: "✦",
   docsRepositoryBase: "https://github.com/XinYun2020/nextra-docs",
   editLink: {
-    text: " ",
+    component: () => null,
   },
   feedback: {
-    // content: "Question? Provide feedback \u2192",
-    content: " ",
-    labels: "feedback",
+    content: () => null,
   },
-  head: (
-    <>
-      <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    </>
-  ),
 
   footer: {
     text: `\xA9 ${/* @__PURE__ */ new Date().getFullYear()} Xinyun Zhang.`,
+  },
+  components: {
+    pre: Pre,
   },
   sidebar: {
     // defaultMenuCollapseLevel: 2,
@@ -70,16 +76,7 @@ const config: DocsThemeConfig = {
     <div style={{ maxWidth: 1024, margin: "0 auto" }}>{children}</div>
   ),
   navbar: {
-    extraContent: (
-      <>
-        <NavbarIcons />
-      </>
-    ),
-  },
-  themeSwitch: {},
-  darkMode: false,
-  nextThemes: {
-    defaultTheme: "system",
+    extraContent: <NavbarIcons />,
   },
 };
 

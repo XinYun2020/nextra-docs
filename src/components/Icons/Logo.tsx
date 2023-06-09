@@ -2,7 +2,7 @@ import React from "react";
 
 const Logo = () => {
   return (
-    <>
+    <div className="flex flex-row items-center hover:cursor-pointer">
       <svg
         width="36"
         height="36"
@@ -11,21 +11,23 @@ const Logo = () => {
         xmlns="http://www.w3.org/2000/svg">
         <rect
           stroke="#4deac3"
-          stroke-width="2"
+          strokeWidth="2.5"
           id="svg_6"
-          height="29.38462"
-          width="25.07692"
-          y="3.30769"
-          x="5.46154"
+          height="28"
+          width="24"
+          y="4"
+          x="6"
           rx={5}
         />
       </svg>
       <span
         style={{ marginLeft: ".4em", fontWeight: 800 }}
-        className={"font-sans not-italic"}>
-        XinYun2020 Zettelkasten
+        className={
+          "font-sans not-italic my-auto text-xl font-bold tracking-tight"
+        }>
+        Xinyun<span className="xtext-[#4deac3] ml-1">Z</span>ettelkasten
       </span>
-    </>
+    </div>
   );
 };
 
