@@ -20,8 +20,8 @@ const config: DocsThemeConfig = {
   // head: <Head />,
   logo: <Logo />,
   darkMode: false,
-  // primaryHue: 172.5,
-  primaryHue: 190.9,
+  primaryHue: 172.5,
+  // primaryHue: 190.9,
   themeSwitch: {},
   nextThemes: {
     defaultTheme: "system",
