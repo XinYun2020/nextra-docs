@@ -10,7 +10,7 @@ const CvLabelWithTime = ({ label, time, highlight = true }) => {
   return (
     <div
       className={`flex flex-col md:flex-row font-bold justify-between pt-2 ${
-        highlight && " text-teal-600 dark:text-teal-400"
+        highlight && " text-[#0AAFCE] dark:text-[#0AAFCE]"
       }`}>
       <span className="text-lg ">{label}</span>
       <span className="text-right">{time}</span>

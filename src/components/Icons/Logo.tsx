@@ -10,7 +10,7 @@ const Logo = () => {
         fill="none"
         xmlns="http://www.w3.org/2000/svg">
         <rect
-          stroke="#4deac3"
+          stroke="#0AAFCE"
           strokeWidth="2.5"
           id="svg_6"
           height="28"
@@ -25,7 +25,7 @@ const Logo = () => {
         className={
           "font-sans not-italic my-auto text-xl font-bold tracking-tight"
         }>
-        Xinyun<span className="xtext-[#4deac3] ml-1">Z</span>ettelkasten
+        Xinyun<span className="xtext-[#0AAFCE] ml-1">Z</span>ettelkasten
       </span>
     </div>
   );

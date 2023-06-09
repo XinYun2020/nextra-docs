@@ -39,9 +39,9 @@ html[class~="dark"] .cursor {
 }
 
 .underline {
-  text-decoration: underline #4deac3;
+  text-decoration: underline #0aafce;
 }
 
 html[class~="dark"] .underline {
-  text-decoration: underline #4deac3;
+  text-decoration: underline #0aafce;
 }
