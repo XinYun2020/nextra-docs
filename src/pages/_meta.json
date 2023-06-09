@@ -21,6 +21,7 @@
       "typesetting": "article"
     }
   },
+  
   "index":  {
     "title": "Home",
     "theme": {
@@ -33,6 +34,6 @@
       "typesetting": "article"
     }
   },
-  "zettelkasten-note":"⭐ Permanent Notes #blog",
+  "zettelkasten-note":"🖋️ Summary Notes #blog",
   "zettelkasten-src":"🖋️ Fleeting Notes #til"
 }
