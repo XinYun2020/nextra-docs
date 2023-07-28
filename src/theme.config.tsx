@@ -6,6 +6,7 @@ import { MY } from "./constants";
 import { useRouter } from "next/router";
 import { useConfig } from "nextra-theme-docs";
 import { Pre } from "./components/Pre";
+import DocslyClient from "components/DocslyClient";
 
 // node_modules/nextra-theme-docs/dist/index.tsx
 const config: DocsThemeConfig = {
@@ -41,6 +42,12 @@ const config: DocsThemeConfig = {
 
   footer: {
     text: `\xA9 ${/* @__PURE__ */ new Date().getFullYear()} Xinyun Zhang.`,
+    component: () => (
+      <>
+        {/* Your footer code */}
+        <DocslyClient />
+      </>
+    ),
   },
   components: {
     pre: Pre,
