@@ -6,7 +6,7 @@ import { MY } from "./constants";
 import { useRouter } from "next/router";
 import { useConfig } from "nextra-theme-docs";
 import { Pre } from "./components/Pre";
-import DocslyClient from "components/DocslyClient";
+import DocslyClient from "@/components/DocslyClient";
 
 // node_modules/nextra-theme-docs/dist/index.tsx
 const config: DocsThemeConfig = {
