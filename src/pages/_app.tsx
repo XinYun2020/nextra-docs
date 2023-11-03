@@ -12,8 +12,8 @@ export default function App({ Component, pageProps }: AppProps) {
         appearance={{
           variables: {
             colorPrimary: "#38c7b7", // #C73848
-            colorText: "#000000",
-          },
+            colorText: "#000000"
+          }
         }}>
         <Component {...pageProps} />
       </ClerkProvider>

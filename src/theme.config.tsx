@@ -16,28 +16,30 @@ const config: DocsThemeConfig = {
       <a href="/cv" target="_blank">
         🎉 2023 CV is released. Read more →
       </a>
-    ),
+    )
   },
   // head: <Head />,
   logo: <Logo />,
   darkMode: false,
+
   // primaryHue: 172.5,
-  primaryHue: 190.0,
+  // primaryHue: 190.0,
+  primaryHue: 210.0, // hyperlink color
   themeSwitch: {},
   nextThemes: {
-    defaultTheme: "system",
+    defaultTheme: "system"
   },
   project: {
-    link: "https://github.com/XinYun2020",
+    link: "https://github.com/XinYun2020"
   },
   direction: "ltr",
   faviconGlyph: "✦",
   docsRepositoryBase: "https://github.com/XinYun2020/nextra-docs",
   editLink: {
-    component: () => null,
+    component: () => null
   },
   feedback: {
-    content: () => null,
+    content: () => null
   },
 
   footer: {
@@ -47,10 +49,10 @@ const config: DocsThemeConfig = {
         {/* Your footer code */}
         <DocslyClient />
       </>
-    ),
+    )
   },
   components: {
-    pre: Pre,
+    pre: Pre
   },
   sidebar: {
     // defaultMenuCollapseLevel: 2,
@@ -65,27 +67,27 @@ const config: DocsThemeConfig = {
         return <>❓ {title}</>;
       }
       return <>{title}</>;
-    },
+    }
   },
   toc: {
     float: true,
-    title: "Page Contents",
+    title: "Page Contents"
   },
   useNextSeoProps: () => ({
     titleTemplate: "%s \u2013 Xinyun Zhang",
-    description: "Xinyun Zhang | %s",
+    description: "Xinyun Zhang | %s"
   }),
   navigation: {
     prev: true,
-    next: true,
+    next: true
   },
   gitTimestamp: <></>,
   main: ({ children }) => (
     <div style={{ maxWidth: 1024, margin: "0 auto" }}>{children}</div>
   ),
   navbar: {
-    extraContent: <NavbarIcons />,
-  },
+    extraContent: <NavbarIcons />
+  }
 };
 
 export default config;

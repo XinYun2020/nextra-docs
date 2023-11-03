@@ -14,6 +14,9 @@ function Typer() {
     "Data Science Student",
     "Keyboard Enthusiast",
     "Software Engineer",
+    "Amateur Photographer",
+    "Monash University University Alumni",
+    "The University of Melbourne Alumni"
   ];
 
   const [canAnimate, setCanAnimate] = React.useState(false);
@@ -21,7 +24,7 @@ function Typer() {
 
   const [state, setState] = React.useState({
     index: 0,
-    sentence: words[0],
+    sentence: words[0]
   });
 
   let { index, sentence } = state;
@@ -33,7 +36,7 @@ function Typer() {
       setState({
         ...state,
         sentence: sentence.slice(0, -1),
-        index: 0,
+        index: 0
       });
     }, 32);
 
@@ -53,7 +56,7 @@ function Typer() {
         setState({
           ...state,
           sentence: sentence + words[indexWord][index],
-          index: ++index,
+          index: ++index
         });
       }, 32);
     } else {
