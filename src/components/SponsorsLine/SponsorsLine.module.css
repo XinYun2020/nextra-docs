@@ -163,19 +163,25 @@ html[class~="dark"] .gradient-left {
   grid-gap: 10px;
 }
 
-.ramen {
-  grid-template-rows: repeat(6, 38px);
-  grid-auto-columns: 38px;
-  grid-gap: 3px;
-}
-
 .coffee {
-  grid-template-rows: repeat(7, 35px);
+  grid-template-rows: repeat(6, 35px);
   grid-auto-columns: 35px;
   grid-gap: 3px;
 }
 
+.flower {
+  grid-template-rows: repeat(7, 38px);
+  grid-auto-columns: 38px;
+  grid-gap: 3px;
+}
+
 .past {
+  grid-template-rows: repeat(9, 25px);
+  grid-auto-columns: 25px;
+  grid-gap: 5px;
+}
+
+.spiritual {
   grid-template-rows: repeat(9, 25px);
   grid-auto-columns: 25px;
   grid-gap: 5px;

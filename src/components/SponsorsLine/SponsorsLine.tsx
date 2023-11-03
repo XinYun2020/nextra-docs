@@ -31,8 +31,9 @@ const sponsors = [
       }
     ]
   },
+
   {
-    name: "silver",
+    name: "coffee",
     items: [
       {
         sponsorEntity: {
@@ -45,7 +46,7 @@ const sponsors = [
     ]
   },
   {
-    name: "bronze",
+    name: "flower",
     items: [
       {
         sponsorEntity: {
@@ -58,20 +59,7 @@ const sponsors = [
     ]
   },
   {
-    name: "community",
-    items: [
-      {
-        sponsorEntity: {
-          __typename: "Organization",
-          login: "facebook",
-          avatarUrl: "https://avatars.githubusercontent.com/u/69631?v=4",
-          name: "Facebook"
-        }
-      }
-    ]
-  },
-  {
-    name: "in-kind",
+    name: "spiritual",
     items: [
       {
         sponsorEntity: {
@@ -121,16 +109,23 @@ const sponsorTypes = {
     hasCard: true,
     size: 60
   },
-  media: {
-    emoji: "📺",
-    header: "Media",
+  coffee: {
+    emoji: "☕️",
+    header: "Coffee",
     hasName: true,
     hasCard: true,
     size: 60
   },
-  "in-kind": {
-    emoji: "🎁",
-    header: "In-Kind",
+  flower: {
+    emoji: "🌹",
+    header: "Little Red Flower",
+    hasName: true,
+    hasCard: true,
+    size: 60
+  },
+  spiritual: {
+    emoji: "🔮",
+    header: "Spiritual",
     hasName: true,
     hasCard: true,
     size: 60
@@ -169,6 +164,11 @@ const SponsorsLine = () => {
                         </div>
                       </header>
                       <div className={`${styles.cards} ${styles[type.name]}`}>
+                        {type.items.map((sponsor) => (
+                          <p className="font-plex italic text-sm capitalize ">
+                            be the first
+                          </p>
+                        ))}
                         {/* {type.items.map((sponsor) => (
                     <SponsorItem
                       key={sponsor.sponsorEntity.login}
