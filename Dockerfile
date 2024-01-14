@@ -1,6 +1,6 @@
 FROM node:18
 
-WORKDIR /xinyun_zet
+WORKDIR /app
 
 ADD package.json pnpm-lock.json 
 
