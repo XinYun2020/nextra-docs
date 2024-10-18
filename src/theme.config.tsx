@@ -8,13 +8,15 @@ import { useConfig } from "nextra-theme-docs";
 import { Pre } from "./components/Pre";
 import DocslyClient from "@/components/DocslyClient";
 
+const currentYear = new Date().getFullYear();
+
 // node_modules/nextra-theme-docs/dist/index.tsx
 const config: DocsThemeConfig = {
   banner: {
-    key: "2023-CV-released",
+    key: `${currentYear}-CV-released`,
     text: (
-      <a href="/cv" target="_blank">
-        🎉 2023 CV is released. Read more →
+      <a href="/cv" target="_blank" rel="noopener noreferrer">
+        🎉 {currentYear} CV is released. Read more →
       </a>
     )
   },
